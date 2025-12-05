@@ -1,0 +1,6 @@
+I designed a custom VPC named Interview-vpc with a 10.0.0.0/16 CIDR block to provide a scalable private network.
+Within the VPC, I created four subnets—two public and two private—distributed across availability zones to improve availability and fault tolerance.
+Public subnets were configured with an Internet Gateway and appropriate route table to enable outbound/inbound internet traffic.
+Private subnets were associated with a NAT Gateway route table, allowing secure outbound internet access while preventing external inbound traffic.
+Each subnet was assigned its own CIDR range (e.g., 10.0.1.0/24, 10.0.2.0/24), ensuring logical network segmentation and isolation of application tiers.
+This structure supports a standard 3-tier architecture, enhances security, and provides flexibility for deploying scalable workloads.
